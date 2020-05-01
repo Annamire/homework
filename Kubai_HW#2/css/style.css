@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+p {
+  color: green;
+}
+
+a[href^='https'] {
+    color: red;
+}
+
+.list > li:last-child {
+    background: blue;
+}
+
+ul + p {
+    font-size: 26px;
+}
+
+#greycol {
+    color:grey;
+}
+
+.text-box > div >p {
+    color: red;
+}
+
+.yellow {
+    color:yellow;
+}
+
+.text-box h3:nth-child(1) {
+    color: pink;
+}
+
+.text-box p:nth-last-child(2) {
+    color: green;
+}
+
+.text-box p:nth-child(2) {
+    color: initial;
+}
+
+.bg-box {
+    width: 1000px;
+    height: 500px;
+    margin: 20px auto;
+    background-color: #2A700A;
+    background-image: url('../images/house.jpg'), url('../images/grass.png'), url('../images/lamp.png'), url('../images/hedgehog.png'), url('../images/donut.png');
+    background-repeat: no-repeat, repeat-x, repeat-x, repeat-y, repeat-y;
+    background-position: center, bottom, top, left, right;
+    background-size: 450px 300px, 115px 160px, 25px 40px, 15px 15px, 20px 20px;
+}
